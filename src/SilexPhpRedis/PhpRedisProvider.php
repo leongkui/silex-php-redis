@@ -1,6 +1,6 @@
 <?php
 
-namespace SilexPredis;
+namespace SilexPhpRedis;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
