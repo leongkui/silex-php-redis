@@ -1,3 +1,4 @@
+{
     "name": "leongkui/silex-php-redis",
     "description": "phpredis extension provider for Silex",
     "keywords": ["silex", "phpredis", "redis"],
