@@ -28,4 +28,4 @@ Check out simple example under "example" directory.
 License
 -------
 
-'SilexPhpRedis' is licensed under the MIT license.
+'silex-php-redis' is licensed under the MIT license.
