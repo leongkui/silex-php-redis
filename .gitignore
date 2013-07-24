@@ -1,2 +1,5 @@
-vendor/
-composer.phar
+.DS_Store
+vendor
+logs/*
+cache
+composer.lock

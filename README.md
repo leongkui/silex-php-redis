@@ -8,7 +8,11 @@ Create (or add to your) composer.json in your projects root-directory::
 
     {
         "require": {
+<<<<<<< HEAD
+            "leongkui/silex-php-redis": "*"
+=======
             "leongkui/SilexPhpRedis": "*"
+>>>>>>> e98aeafc32d427ca62de403a05c867aae5db6a12
         }
     }
 
