@@ -1,8 +1,7 @@
-{
-    "name": "leongkui/SilexPhpRedis",
+    "name": "leongkui/silex-php-redis",
     "description": "phpredis extension provider for Silex",
     "keywords": ["silex", "phpredis", "redis"],
-    "homepage": "https://github.com/leongkui/SilexPhpRedis",
+    "homepage": "https://github.com/leongkui/silex-php-redis",
     "type": "library",
     "license": "MIT",
     "version": "dev",
