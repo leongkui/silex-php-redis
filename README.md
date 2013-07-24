@@ -1,4 +1,4 @@
-Silex PHP Redis Driver Provider
+Silex PHP Redis Extension Provider
 ================
 
 Installation
@@ -16,6 +16,8 @@ and run::
 
     curl -s http://getcomposer.org/installer | php
     php composer.phar install
+
+This is just a silex provider module for phpredis extension, you will need to setup Redis (https://github.com/antirez/redis) and phpredis extension (https://github.com/nicolasff/phpredis).
 
 
 Example
