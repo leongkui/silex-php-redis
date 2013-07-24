@@ -1,0 +1,27 @@
+{
+    "name": "leongkui/SilexPhpRedis",
+    "description": "phpredis extension provider for Silex",
+    "keywords": ["silex", "phpredis", "redis"],
+    "homepage": "https://github.com/leongkui/SilexPhpRedis",
+    "type": "library",
+    "license": "MIT",
+    "version": "dev",
+    "authors": [
+        {
+            "name": "Lim Leong Lui",
+            "homepage": "http://selectnull.leongkui.me/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "silex/silex": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "SilexPhpRedis": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
