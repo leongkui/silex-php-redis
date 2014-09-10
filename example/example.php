@@ -8,7 +8,11 @@ $app->register(new SilexPhpRedis\PhpRedisProvider(), array(
     'redis.host' => '127.0.0.1',
     'redis.port' => 6379,
     'redis.timeout' => 30,
-    'redis.persistent' => true
+    'redis.persistent' => true,
+    'redis.serializer.igbinary' => false, // use igBinary serialize/unserialize
+    'redis.serializer.php' => false, // use built-in serialize/unserialize
+    'redis.prefix' => 'myprefix',
+    'redis.database' => '0'
 ));
 
 /** routes **/
