@@ -1,5 +1,5 @@
 {
-    "name": "leongkui/silex-php-redis",
+    "name": "immortalx/silex-php-redis",
     "description": "phpredis extension provider for Silex",
     "keywords": ["silex", "phpredis", "redis"],
     "homepage": "https://github.com/leongkui/silex-php-redis",
