@@ -9,7 +9,7 @@ class PhpRedisProvider implements ServiceProviderInterface
 {
     public function register(Container $app)
     {
-        $app['redis'] = $app->share(function () use ($app) {
+        $app['redis'] = function () use ($app) {
             $thisRedis = new \Redis();
             $host = isset($app['redis.host']) ? $app['redis.host'] : array();
             $port = isset($app['redis.port']) && is_int($app['redis.port']) ? $app['redis.port'] : 6379;
@@ -48,6 +48,6 @@ class PhpRedisProvider implements ServiceProviderInterface
             }
 
             return $thisRedis;
-        });
+        };
     }
 }
