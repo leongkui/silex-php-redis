@@ -4,15 +4,15 @@ Silex PHP Redis Extension Provider
 Installation
 ------------
 
-Create (or add to your) composer.json in your projects root-directory::
+Create (or add to your) composer.json in your projects root-directory:
 
     {
         "require": {
-            "leongkui/silex-php-redis": "*"
+            "furester/silex-php-redis": "*"
         }
     }
 
-and run::
+and run:
 
     curl -s http://getcomposer.org/installer | php
     php composer.phar install

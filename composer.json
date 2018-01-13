@@ -1,15 +1,14 @@
 {
-    "name": "immortalx/silex-php-redis",
+    "name": "furester/silex-php-redis",
     "description": "phpredis extension provider for Silex",
     "keywords": ["silex", "phpredis", "redis"],
-    "homepage": "https://github.com/leongkui/silex-php-redis",
+    "homepage": "https://github.com/furester/silex-php-redis",
     "type": "library",
     "license": "MIT",
     "version": "dev",
     "authors": [
         {
-            "name": "Lim Leong Kui",
-            "homepage": "http://selectnull.leongkui.me/"
+            "name": "Igor Scabini"
         }
     ],
     "require": {

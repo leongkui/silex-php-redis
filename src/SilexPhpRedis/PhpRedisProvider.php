@@ -2,17 +2,12 @@
 
 namespace SilexPhpRedis;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\ServiceProviderInterface;
+use Pimple\Container;
 
 class PhpRedisProvider implements ServiceProviderInterface
 {
-    public function boot(Application $app)
-    {
-
-    }
-
-    public function register(Application $app)
+    public function register(Container $app)
     {
         $app['redis'] = $app->share(function () use ($app) {
             $thisRedis = new \Redis();
