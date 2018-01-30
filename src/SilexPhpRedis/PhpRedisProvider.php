@@ -2,19 +2,14 @@
 
 namespace SilexPhpRedis;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\ServiceProviderInterface;
+use Pimple\Container;
 
 class PhpRedisProvider implements ServiceProviderInterface
 {
-    public function boot(Application $app)
+    public function register(Container $app)
     {
-
-    }
-
-    public function register(Application $app)
-    {
-        $app['redis'] = $app->share(function () use ($app) {
+        $app['redis'] = function () use ($app) {
             $thisRedis = new \Redis();
             $host = isset($app['redis.host']) ? $app['redis.host'] : array();
             $port = isset($app['redis.port']) && is_int($app['redis.port']) ? $app['redis.port'] : 6379;
@@ -53,6 +48,6 @@ class PhpRedisProvider implements ServiceProviderInterface
             }
 
             return $thisRedis;
-        });
+        };
     }
 }
